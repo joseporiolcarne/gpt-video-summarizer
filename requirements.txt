@@ -1,0 +1,6 @@
+openai
+moviepy
+python-dotenv
+pytubefix
+pyperclip
+validators

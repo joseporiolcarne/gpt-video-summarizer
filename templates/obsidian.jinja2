@@ -1,0 +1,41 @@
+{% extends "base_template.jinja2" %}
+{% block content %}
+Provide the summary in this Obsidian format markdown fontmatter format:
+"""
+---
+creation_date: <% tp.file.creation_date() %>
+url: 
+note_type:
+  - web
+  - video
+  - podcast
+  - paper
+  - book
+notes_description: 
+notes_author: 
+annotation-target: 
+annotation-target-type: pdf
+---
+[[@Literature]]
+[[MOST_DESCRIPTIVE_CATEGORY]]
+
+## **Overview**
+
+## **Key Topics Covered**
+- **Topic 1**: Brief description or insight.
+- **Topic 2**: Brief description or insight.
+- **Topic 3**: Brief description or insight.
+- **Topic n**: Brief description or insight.
+
+## **Key Takeaways**
+1. **Takeaway 1**: 
+2. **Takeaway 2**: 
+3. **Takeaway 3**: 
+n. **Takeaway n**:
+"""
+
+Fill correctly: url, note_type (only one), notes_description, notes_author and MOST_DESCRIPTIVE_CATEGORY 
+
+Use as much Topics and Takeaways you subjectively consider necessary and relevant.
+
+{% endblock %}
